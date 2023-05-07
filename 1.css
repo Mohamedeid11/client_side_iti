@@ -1,0 +1,68 @@
+body{
+    font-weight: bolder;
+    font-size: larger;
+}
+
+header{
+    text-align: center;
+    background-color: green;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+}
+
+nav{
+    background-color: rgb(201, 221, 231);
+    padding: 5px;
+    margin: 5px;
+}
+
+nav button{
+  flex-direction: row;  
+  background-color: rgb(121, 121, 228);
+  color: white;
+  margin: 5px;
+  margin-left: 180px;
+}
+
+section{
+    height:150px;
+    background-color: rgb(255, 111, 0);
+    margin: 5px;
+    text-align: center;
+    display: inline-table;
+}
+
+section h2{
+    color: white;
+}
+
+article {
+    position: relative;
+    background-color: orange;
+    color: white;
+    text-align: center;
+    margin: 10px;
+}
+
+footer{
+    bottom: 0;
+    position: relative;
+    background-color: tomato;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 60px;   /* Height of the footer */
+    clear: both;
+}
+
+footer h3{
+    padding-top: 20px ;
+    text-decoration: none;
+    margin-top:  10px; 
+}
+
+footer h3 a{
+    text-decoration: none;
+}
+
