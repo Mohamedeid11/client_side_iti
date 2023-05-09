@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+        <title>Drawing Board</title>
+        <style type="text/css">
+            canvas {
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+                
+        <div class="container m-5">
+
+            <div class="card text-center">
+                <div class="card-header">
+                  <ul class="nav nav-pills card-header-pills ">
+                    
+                      <button class="btn btn-info m-2" onclick="displayLine()"> Draw Line</button>
+                      <button class="btn btn-warning m-2" onclick="displayCircle()"> Draw Circle</button>
+                      <button class="btn btn-danger m-2" onclick="displayRect()"> Draw rectangular</button>
+                  </ul>
+                </div>
+                <div class="card-body">
+
+                    <svg id="mySvg" width="100" height="100">
+                        
+                        <line id="myLine" x1="0" y1="0" x2="200" y2="200" stroke-width="2" style="stroke:rgb(249, 101, 2); display:none" />
+                        
+                        <circle id="myCircle" cx="50" cy="50" r="40" stroke="none" stroke-width="5" style="fill: green; display:none"></circle> 
+
+                        <rect id="myRect" width="50" height="80" x="20" y="15" stroke="green" stroke-width="3" style="fill: green; display:none" />
+
+                    </svg>
+                </div>
+            </div>
+
+        </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script src="svg.js"></script>
+
+    </body>
+</html>
+
+
+  
